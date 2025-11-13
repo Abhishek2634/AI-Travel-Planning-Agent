@@ -107,6 +107,58 @@ You'll need the following API keys:
         chmod +x calendar_mcp.py
     ```
 
+## Getting Google Calendar OAuth Credentials
+If you want calendar integration:
+
+1.  ```bash
+        python get_refresh_token.py
+    ```
+    
+2.  **Follow the prompts:**
+    
+    Browser will open for Google sign-in
+        
+    Sign in with the Google account you want to use
+        
+    Grant calendar permissions
+        
+    Copy the tokens displayed
+        
+3.  **Add tokens to .env file**
+    
+
+## 🚀 Running the App
+
+1.  ```bash
+        streamlit run app.py
+    ```
+    
+2.  **Access the app:**
+    
+    Local: [http://localhost:8501](http://localhost:8501/)
+        
+    Network: [http://your-ip:8501](http://your-ip:8501/)
+        
+3.  **Using the app:**
+    
+    API keys auto-load from .env (or enter manually in sidebar)
+        
+    Enter your trip details (source, destination, dates, budget)
+        
+    Select travel preferences using multi-select tags
+        
+    Choose dietary restrictions and accommodation preferences
+        
+    Click "Plan My Trip" to generate your itinerary
+        
+    Download calendar file (.ics) for import into your calendar app
+        
+
+<!-- 5. **Make calendar_mcp.py executable (if using calendar features)**
+    ```bash
+        chmod +x calendar_mcp.py
+    ```
+
 
 ## Getting Google Calendar OAuth Credentials
 If you want calendar integration:
@@ -351,4 +403,4 @@ This project is open source and available under the MIT License.
 *   **Airbnb, Google Maps, AccuWeather**: Real-time data providers
     
 
-**Built with ❤️ using AI agents and MCP servers**
+**Built with ❤️ using AI agents and MCP servers** -->
