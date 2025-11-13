@@ -103,9 +103,9 @@ You'll need the following API keys:
   ```
 
 5. **Make calendar_mcp.py executable**
-  ```bash
-    chmod +x calendar_mcp.py
-  ```
+    ```bash
+        chmod +x calendar_mcp.py
+    ```
 
 ## Getting Google Calendar OAuth Credentials
 If you want calendar integration:
