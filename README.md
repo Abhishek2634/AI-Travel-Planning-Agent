@@ -144,7 +144,7 @@ If you want calendar integration:
 
 2. Access the app:
    - Local: http://localhost:8501
-   - Network: http://your-ip:8501
+   - Network: https://abhishek2634-ai-travel-planning-agent-app-kqfyba.streamlit.app/
 
 3. Using the app:
    - API keys auto-load from `.env` (or enter manually in the sidebar).
