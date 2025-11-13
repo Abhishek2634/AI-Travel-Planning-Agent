@@ -110,9 +110,9 @@ You'll need the following API keys:
 ## Getting Google Calendar OAuth Credentials
 If you want calendar integration:
 
-1.    ```bash
+1.  ```bash
         python get_refresh_token.py
-      ```
+    ```
 
 2. **Follow the prompts:**
 
