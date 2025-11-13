@@ -156,7 +156,7 @@ Network: [http://your-ip:8501](http://your-ip:8501/)
 ## 🔧 How It Works
 ### Multi-Agent Architecture
 
-    The app uses a sophisticated multi-agent system:
+The app uses a sophisticated multi-agent system:
 
 1. **Travel Planner Agent**
 
@@ -206,15 +206,15 @@ Network: [http://your-ip:8501](http://your-ip:8501/)
 
 ## MCP Connection Issues
 
-    Check terminal output for these messages:
+Check terminal output for these messages:
 
-    ✅ Airbnb MCP Server running on stdio
+✅ Airbnb MCP Server running on stdio
 
-    ✅ Google Maps MCP Server running on stdio
+✅ Google Maps MCP Server running on stdio
 
-    ✅ Travel Planner MCP Server running on stdio
+✅ Travel Planner MCP Server running on stdio
 
-    ✅ Processing request of type ListToolsRequest`
+✅ Processing request of type ListToolsRequest`
 
 ## Calendar Not Working
 
@@ -224,82 +224,82 @@ Network: [http://your-ip:8501](http://your-ip:8501/)
 
 2. **Error: "Authentication failed"**
 
-      Regenerate refresh token: python get\_refresh\_token.py
+    Regenerate refresh token: python get\_refresh\_token.py
 
-      Make sure you're signed in with the correct Google account
+    Make sure you're signed in with the correct Google account
 
 3. **Calendar MCP not loading**
 
-      Check calendar\_mcp.py has execute permissions: chmod +x calendar\_mcp.py
+    Check calendar\_mcp.py has execute permissions: chmod +x calendar\_mcp.py
 
-      Verify all Google OAuth credentials in .env
+    Verify all Google OAuth credentials in .env
 
 
 ## Date Calculation Issues
 
-      The app uses proper date pickers to avoid parsing errors
+    The app uses proper date pickers to avoid parsing errors
 
-      Duration is automatically calculated from start and end dates
+    Duration is automatically calculated from start and end dates
 
-      Make sure end date is after start date
+    Make sure end date is after start date
 
 
 ## Network Issues
 
-      Some corporate networks block MCP connections
+    Some corporate networks block MCP connections
 
-      Try using a VPN or personal network
+    Try using a VPN or personal network
 
-      The app will continue with available tools if MCP servers fail
+    The app will continue with available tools if MCP servers fail
 
 
 
 ## 🎯 Features in Detail
 ### Itinerary Generation
 
-      Day-by-day detailed schedules
+    Day-by-day detailed schedules
 
-      Specific timing for all activities
+    Specific timing for all activities
 
-      Transportation details between locations
+    Transportation details between locations
 
-      Restaurant recommendations with cuisine types
+    Restaurant recommendations with cuisine types
 
-      Accommodation options with pricing
+    Accommodation options with pricing
 
-      Weather forecasts and packing lists
+    Weather forecasts and packing lists
 
-      Local tips and safety information
+    Local tips and safety information
 
 
 ### Budget Management
 
-      Total estimated cost breakdown
+    Total estimated cost breakdown
 
-      Per-day budget allocation
+    Per-day budget allocation
 
-      Accommodation costs
+    Accommodation costs
 
-      Activity and attraction fees
+    Activity and attraction fees
 
-      Transportation expenses
+    Transportation expenses
 
-      Meal budgets
+    Meal budgets
 
 
 ### Personalization
 
-      Adventure, Relaxation, Sightseeing, Cultural Experiences
+    Adventure, Relaxation, Sightseeing, Cultural Experiences
 
-      Beach, Mountain, Luxury, Budget-Friendly
+    Beach, Mountain, Luxury, Budget-Friendly
 
-      Food & Dining, Shopping, Nightlife, Family-Friendly
+    Food & Dining, Shopping, Nightlife, Family-Friendly
 
-      Dietary restrictions support
+    Dietary restrictions support
 
-      Accommodation preference customization
+    Accommodation preference customization
 
-      Transportation mode selection
+    Transportation mode selection
 
 
 ### 🌟 What Makes This Special
