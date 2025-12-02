@@ -10,3 +10,4 @@ google-auth
 google-auth-oauthlib
 python-dotenv
 duckduckgo-search
+agno[google-search]

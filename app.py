@@ -4,7 +4,7 @@ from textwrap import dedent
 from agno.agent import Agent
 from agno.run.agent import RunOutput
 from agno.tools.mcp import MultiMCPTools
-from agno.tools.googlesearch import GoogleSearchTools
+from agno.tools.googlesearch import GoogleSearch
 from agno.models.openai import OpenAIChat
 from icalendar import Calendar, Event
 from datetime import datetime, timedelta, date
@@ -111,7 +111,7 @@ async def run_mcp_travel_planner(source: str, destination: str, start_date_str: 
                 "Add calendar events for each major activity or day of the trip",
                 "Include reminders for important bookings and check-ins",
             ],
-            tools=[mcp_tools, GoogleSearchTools()],
+            tools=[mcp_tools, GoogleSearch()],
             add_datetime_to_context=True,
             markdown=True,
             debug_mode=False,
