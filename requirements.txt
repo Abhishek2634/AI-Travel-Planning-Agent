@@ -1,5 +1,4 @@
-streamlit
-agno>=2.2.10
+agno[tools]>=2.2.10
 openai
 icalendar
 google-search-results
@@ -10,3 +9,4 @@ google-api-python-client
 google-auth
 google-auth-oauthlib
 python-dotenv
+duckduckgo-search
