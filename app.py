@@ -236,18 +236,22 @@ col1, col2 = st.columns(2)
 with col1:
     start_date_input = st.date_input(
         "Start Date", 
-        value=date(2025, 11, 20),
+        value=date.today(),  # CHANGED: Set default to today
         min_value=date.today(),
         key="start_date"
     )
 
 with col2:
+    # Default the end date to tomorrow so it's valid
+    default_end = date.today() + timedelta(days=4) 
+    
     end_date_input = st.date_input(
         "End Date", 
-        value=date(2025, 11, 24),
+        value=default_end,  # CHANGED: Set default to a valid future date
         min_value=date.today(),
         key="end_date"
     )
+
 
 col1, col2 = st.columns(2)
 
