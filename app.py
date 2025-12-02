@@ -1,19 +1,22 @@
 import re
 import asyncio
 from textwrap import dedent
+from datetime import datetime, timedelta, date
+import os
+import streamlit as st
+from dotenv import load_dotenv
+from icalendar import Calendar, Event
+
+# --- Import Agno Components ---
 from agno.agent import Agent
 from agno.run.agent import RunOutput
 from agno.tools.mcp import MultiMCPTools
-from agno.tools.googlesearch import GoogleSearch
 from agno.models.openai import OpenAIChat
-from icalendar import Calendar, Event
-from datetime import datetime, timedelta, date
-import streamlit as st
-import os
-from dotenv import load_dotenv
+from agno.tools.tavily import TavilyTools  # Add this
 
-# Load environment variables from .env file
+# Load environment variables
 load_dotenv()
+
 
 def generate_ics_content(plan_text: str, start_date: datetime = None) -> bytes:
     """Generate an ICS calendar file from a travel itinerary text."""
@@ -111,7 +114,7 @@ async def run_mcp_travel_planner(source: str, destination: str, start_date_str: 
                 "Add calendar events for each major activity or day of the trip",
                 "Include reminders for important bookings and check-ins",
             ],
-            tools=[mcp_tools, GoogleSearch()],
+            tools=[mcp_tools, TavilyTools()],  # Use Tavily instead
             add_datetime_to_context=True,
             markdown=True,
             debug_mode=False,

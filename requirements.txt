@@ -1,7 +1,6 @@
 agno[tools]>=2.2.10
 openai
 icalendar
-google-search-results
 googlesearch-python
 pycountry
 mcp
@@ -10,4 +9,4 @@ google-auth
 google-auth-oauthlib
 python-dotenv
 duckduckgo-search
-agno[google-search]
+tavily-python
